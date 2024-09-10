@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>waterbody_arit.kmz</name>
+	<StyleMap id="__managed_style_070C671C193306AD1BCD">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1AC6002B133306AD1BCD</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_25CE28759F3306AD1BCD</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_247882AA4B3306A43B66">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.0.26.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff6abb66</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_12211D7E883306A43B66">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.0.26.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff6abb66</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1AC6002B133306AD1BCD">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.0.26.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2f2fd3</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40d27619</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0FF0011B863306A43B66">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_12211D7E883306A43B66</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_247882AA4B3306A43B66</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_27743718F73306A222C1">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.0.26.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff3c8e38</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_231D99CA253306AE29A8">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.0.26.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff5053ef</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_199C5ED97C3306A5D1F4">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.0.26.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2f2fd3</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_081485CC733306AE29A8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_18D08B9F2E3306AE29A8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_231D99CA253306AE29A8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_0F7843E0A73306A90D82">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_16A62B55CF3306A90D82</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2FA17820023306A90D82</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_2771F154233306A5D1F4">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.0.26.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2f2fd3</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_18D08B9F2E3306AE29A8">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.0.26.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff5053ef</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_08330E5DAC3306A222C1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_14B152B69A3306A222C1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_27743718F73306A222C1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_277011E54833069D2FEE">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff9f3f30</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1942E7C41A33069D2FEE">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff9f3f30</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_04B8E405A233069D2FEE">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1942E7C41A33069D2FEE</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_277011E54833069D2FEE</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_16A62B55CF3306A90D82">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2f2fd3</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_09F5164CEA33069AF003">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.0.26.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff9f3f30</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_25CE28759F3306AD1BCD">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.0.26.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2f2fd3</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40d27619</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_01B20E08E93306980822">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_13C3816FC23306980822</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_02FDA22C293306980823</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_02FDA22C293306980823">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0BB763A9703306979CF7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1263B73EAF3306979CF7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2955E647713306979CF7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>4d00aa00</color>
+		</PolyStyle>
+	</Style>
+	<gx:CascadingStyle kml:id="__managed_style_14B152B69A3306A222C1">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.0.26.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff3c8e38</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<Style id="sn_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>4d00aa00</color>
+		</PolyStyle>
+	</Style>
+	<gx:CascadingStyle kml:id="__managed_style_2955E647713306979CF7">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>card</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0072DE919333069AF002">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_12CEF7F75F33069AF002</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_09F5164CEA33069AF003</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_2FA17820023306A90D82">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2f2fd3</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1263B73EAF3306979CF7">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>card</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_12CEF7F75F33069AF002">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.0.26.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff9f3f30</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40f5a542</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_071142E1253306A5D1F4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_199C5ED97C3306A5D1F4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2771F154233306A5D1F4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_13C3816FC23306980822">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<Placemark id="0CB9EF146832FC4AE8EC">
+		<name>Arit</name>
+		<gx:mid>/g/12hlqnn0y</gx:mid>
+		<gx:fid>0x3a02a0480156a07f:0xe51857d2b3bce373</gx:fid>
+		<LookAt>
+			<longitude>87.8361692</longitude>
+			<latitude>22.5700971</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>5162.692676635218</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0BB763A9703306979CF7</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>87.83506899999999,22.5698201,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="2F48AEF6D532FC44D66B">
+		<name>Village</name>
+		<styleUrl>#msn_ylw-pushpin3</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						87.83051505206681,22.57744505590705,0 87.83021734336178,22.57611755994418,0 87.83033581395198,22.57485018687116,0 87.83058138385086,22.573801842177,0 87.83088280484375,22.57329970050007,0 87.83114823241226,22.57133225485463,0 87.8316091599025,22.56759951892883,0 87.83127120362835,22.56655964351228,0 87.83134628571923,22.5663516324604,0 87.83134384221172,22.56596397406827,0 87.83216850514802,22.56524423055187,0 87.83197263268505,22.56422944527401,0 87.83163218331232,22.5616817478654,0 87.83188489547545,22.56190688536126,0 87.83382478307217,22.56173301659445,0 87.83528994475002,22.56316685682136,0 87.83660407956877,22.56353949814393,0 87.83918207209034,22.56487855816182,0 87.83883962349749,22.57529925955732,0 87.84119806593822,22.57607191305372,0 87.84162170460328,22.5768586065165,0 87.84136250703426,22.57710809630057,0 87.84018563164211,22.57751843888994,0 87.83674600290728,22.57856451893817,0 87.83455411552558,22.57900844401762,0 87.83266144057791,22.57915218145416,0 87.83054367291436,22.57914055091909,0 87.83051505206681,22.57744505590705,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Folder id="004C689A4E3306980821">
+		<name>waterbody_pond_stlmt</name>
+		<styleUrl>#__managed_style_01B20E08E93306980822</styleUrl>
+		<Placemark id="020483916733069A73A0">
+			<name>pond_stlmt_1</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83324685227983</longitude>
+				<latitude>22.56386806966951</latitude>
+				<altitude>29.16991587955466</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<gx:fovy>30</gx:fovy>
+				<range>340.487881148365</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0072DE919333069AF002</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83332835725777,22.56403111269362,0 87.83316036320707,22.56380021252708,0 87.83298237391939,22.56377985588519,0 87.8329615546604,22.56363292766832,0 87.83305435622367,22.56362539711612,0 87.83311878240163,22.5636722343607,0 87.83325464278705,22.56367273693612,0 87.83342644116695,22.56366314318738,0 87.833579700299,22.56368509681682,0 87.8336646608868,22.56378631325189,0 87.83340909823806,22.56388470781773,0 87.83332835725777,22.56403111269362,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="044CDA162633069BF9A2">
+			<name>pond_stlmt_2</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83426977881912</longitude>
+				<latitude>22.56372042974667</latitude>
+				<altitude>27.72209041693284</altitude>
+				<heading>-14.68017466867058</heading>
+				<tilt>2.13717203172342</tilt>
+				<gx:fovy>30</gx:fovy>
+				<range>341.4200610170156</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0072DE919333069AF002</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83407147367129,22.56365541089727,0 87.83390789088088,22.56359169008384,0 87.83377289844842,22.56360590901139,0 87.83372082109676,22.56338734164614,0 87.8335098612191,22.56330060352623,0 87.8331934388643,22.56331362807985,0 87.83318733020863,22.56315149788545,0 87.83319403970071,22.56297234862491,0 87.8333933865884,22.56298950072235,0 87.83355882910865,22.56305730017624,0 87.83357014351576,22.56313496176136,0 87.83365496697311,22.56316451888122,0 87.83386135640205,22.56325175183838,0 87.83400505181925,22.56336321185047,0 87.8342154976973,22.56347627559189,0 87.83428342205471,22.56354456862879,0 87.83426476436074,22.56357231342009,0 87.8342053556441,22.56365325670494,0 87.83407147367129,22.56365541089727,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="0A5313637E33069D08E6">
+			<name>pond_stlmt_3</name>
+			<LookAt>
+				<longitude>87.83489791663577</longitude>
+				<latitude>22.56505725685372</latitude>
+				<altitude>31.63056351014772</altitude>
+				<heading>-0.05474913355468</heading>
+				<tilt>0.5737713243827746</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>296.5277628362674</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_04B8E405A233069D2FEE</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83505292460855,22.56526753505008,0 87.83481413902314,22.56519793794204,0 87.83466630361701,22.56516742980786,0 87.83461650276695,22.56483799804534,0 87.83509163003049,22.56483569756611,0 87.83511250709883,22.56492920016621,0 87.83505292460855,22.56526753505008,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="03BFBEA79D33069D9390">
+			<name>pond_stlmt_4</name>
+			<description><![CDATA[<div>geometry_type: polygon</div>]]></description>
+			<LookAt>
+				<longitude>87.83521273528881</longitude>
+				<latitude>22.56606599054549</latitude>
+				<altitude>29.29936359247505</altitude>
+				<heading>-0.05474913121945105</heading>
+				<tilt>0.5737662052043025</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>239.6915146206448</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0072DE919333069AF002</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83537019236857,22.56637008422502,0 87.8351699312404,22.5659583976702,0 87.83515543867867,22.56573627041244,0 87.83519215572072,22.56567895024781,0 87.8352719453098,22.56567472075402,0 87.835406893749,22.56575072062222,0 87.83556349723983,22.56585929622779,0 87.83542057928513,22.56621842680903,0 87.83537019236857,22.56637008422502,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="0029B8D00A33069F87EB">
+			<name>pond_stlmt_5</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83652445521872</longitude>
+				<latitude>22.56654688066675</latitude>
+				<altitude>32.47061685343664</altitude>
+				<heading>-0.05474915520093594</heading>
+				<tilt>0.5738195140501572</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>831.6909761559509</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0072DE919333069AF002</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.837049718296,22.5668378375054,0 87.83691306015729,22.56649785041751,0 87.83740525675445,22.56628724956955,0 87.83746412130685,22.56673701153238,0 87.837049718296,22.5668378375054,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="022C1074E73306A0C9D7">
+			<name>pond_stlmt_6</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83653240592939</longitude>
+				<latitude>22.56947569732687</latitude>
+				<altitude>34.45184657421027</altitude>
+				<heading>-0.05474915991072897</heading>
+				<tilt>0.5738193351110817</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>829.7097549626778</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0072DE919333069AF002</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83700345175133,22.56969427506061,0 87.83709510283754,22.56920445335226,0 87.8374808321619,22.56927148166115,0 87.83729584648431,22.56971767646097,0 87.83700345175133,22.56969427506061,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="0DB056E6473306A58009">
+			<name>pond_stlmt_7</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83284613771508</longitude>
+				<latitude>22.57665780998829</latitude>
+				<altitude>25.8833833605612</altitude>
+				<heading>-0.05474916308329997</heading>
+				<tilt>0.573827910389123</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>925.0170633444213</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_071142E1253306A5D1F4</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83208771870491,22.57589791628608,0 87.83197414559945,22.57577453232325,0 87.83198639094093,22.57566032338839,0 87.8320053612794,22.57554229956765,0 87.83217810776176,22.57546879545689,0 87.8323875482823,22.57550717696571,0 87.83240796721194,22.57569252549981,0 87.83208771870491,22.57589791628608,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="074D3402A13306A8DC0F">
+			<name>pond_stlmt_8</name>
+			<LookAt>
+				<longitude>87.8317515076089</longitude>
+				<latitude>22.57799288531395</latitude>
+				<altitude>32.28403214102755</altitude>
+				<heading>-0.05474913069754726</heading>
+				<tilt>0.573786090514129</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>460.6954871398922</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0F7843E0A73306A90D82</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83157122371489,22.57849238531884,0 87.83140174320191,22.57854494007843,0 87.8312063432037,22.57857868126018,0 87.83113932949472,22.5785306234057,0 87.83134686058891,22.57836544466404,0 87.83123698251534,22.57807170521387,0 87.83101936318761,22.57767243067034,0 87.83127785854346,22.57755599499673,0 87.83148059288085,22.57787049632105,0 87.8315641047121,22.57787567804507,0 87.8315520369034,22.57805369052219,0 87.83157587519293,22.57817904816649,0 87.83162031221904,22.57832688648958,0 87.83157122371489,22.57849238531884,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="0098F65B4B3306A9769A">
+			<name>pond_stlmt_9</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83250699886531</longitude>
+				<latitude>22.57811316939593</latitude>
+				<altitude>29.55324128025168</altitude>
+				<heading>-0.05474913256928669</heading>
+				<tilt>0.5737863359998209</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>463.4263646068575</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_071142E1253306A5D1F4</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83275908137334,22.57764966973496,0 87.83293987631104,22.57804658464604,0 87.83295413219652,22.5781913512017,0 87.83278888773084,22.57827602352991,0 87.83259788510183,22.57822403620801,0 87.83234072480589,22.57828228334292,0 87.83213885872865,22.57791074923215,0 87.8321413616728,22.57775609401395,0 87.83224586226093,22.5777177438011,0 87.83240624837896,22.5775749026719,0 87.83258956927163,22.57765886300727,0 87.83275908137334,22.57764966973496,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="0D73774F463306AAADDA">
+			<name>pond_stlmt_10</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83237651363996</longitude>
+				<latitude>22.57847623552048</latitude>
+				<altitude>31.1428148476672</altitude>
+				<heading>-0.05474913575366067</heading>
+				<tilt>0.5737861927373851</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>461.8367057771684</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_071142E1253306A5D1F4</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83237953432068,22.57873745710078,0 87.83211733162928,22.57891338271246,0 87.83179007763867,22.57891723868093,0 87.83175181856652,22.57870582779008,0 87.83231018118158,22.57862679324407,0 87.83237953432068,22.57873745710078,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="04093644DB3306AB1D2D">
+			<name>pond_forest_11</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83237651363996</longitude>
+				<latitude>22.57847623552048</latitude>
+				<altitude>31.1428148476672</altitude>
+				<heading>-0.05474913575337753</heading>
+				<tilt>0.5737861927405611</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>461.8367057771684</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_071142E1253306A5D1F4</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83215074988061,22.57855960692046,0 87.83194691958055,22.57857443746606,0 87.83180976477509,22.57845082499903,0 87.83195158025406,22.57826233847474,0 87.83213031905905,22.57822010084494,0 87.8323073139232,22.57836091921675,0 87.8323362508296,22.57845494210112,0 87.83215074988061,22.57855960692046,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="0E6524475D3306AC1072">
+			<name>pond_stlmt_12</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.8362237785426</longitude>
+				<latitude>22.57743210268166</latitude>
+				<altitude>29.21736841254897</altitude>
+				<heading>-0.0547491428606804</heading>
+				<tilt>0.5738061890695816</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>683.9101390860742</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_071142E1253306A5D1F4</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83621836904328,22.57831819448372,0 87.83594441787152,22.57847754805918,0 87.83553432767523,22.57830849225537,0 87.83549770930873,22.57808920151308,0 87.83573232185732,22.57786007049933,0 87.83568275698953,22.57769752375315,0 87.83558311048989,22.57742467552186,0 87.83585058006405,22.57720792122074,0 87.83596873260193,22.57743366585263,0 87.83600628552887,22.57761320504258,0 87.83626968223463,22.57765125937787,0 87.8363141744087,22.57801687105609,0 87.83621836904328,22.57831819448372,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="0A041E563D3306ADD112">
+			<name>pond_stlmt_13</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83849151528344</longitude>
+				<latitude>22.57678181413031</latitude>
+				<altitude>32.06843068267526</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<gx:fovy>30.00024597120413</gx:fovy>
+				<range>845.9862704682746</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_081485CC733306AE29A8</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83944093583064,22.57731671034227,0 87.83906387540434,22.57747762759567,0 87.83859337497522,22.57751345787679,0 87.83811181996134,22.57738413382298,0 87.83796659594319,22.57719661422541,0 87.8380400489702,22.57665495360501,0 87.83835348874003,22.57657144412006,0 87.83851237734332,22.5767127157519,0 87.83845627105021,22.57710584738213,0 87.83871761843724,22.57696897266821,0 87.83886475924854,22.57706160229458,0 87.83919635625055,22.57706682118226,0 87.83938443350047,22.57712472427639,0 87.83944093583064,22.57731671034227,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="01FA4AAD653306AE82FF">
+			<name>pond_stlmt_14</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83969111901926</longitude>
+				<latitude>22.57704101364155</latitude>
+				<altitude>33.44956933545107</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<gx:fovy>30.00024597120413</gx:fovy>
+				<range>844.6050709672274</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_071142E1253306A5D1F4</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.84000934853849,22.57754601634647,0 87.83949574504096,22.57770437302086,0 87.84004266386584,22.57714887990834,0 87.83994211562481,22.57675447102646,0 87.84009921069692,22.57665140471897,0 87.84064457271194,22.57677290310279,0 87.84073103031486,22.57703276847559,0 87.84090283563722,22.57725849413569,0 87.84000934853849,22.57754601634647,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="06B461B0F23306AF39FF">
+			<name>pond_forest_5</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83889298448229</longitude>
+				<latitude>22.57704214321981</latitude>
+				<altitude>31.81882569423724</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<gx:fovy>30.00024597120413</gx:fovy>
+				<range>846.2358468581806</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_08330E5DAC3306A222C1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83992392976832,22.57628311046183,0 87.83992189949848,22.57655606721586,0 87.83971508899995,22.57662289406197,0 87.83961996175357,22.576469005608,0 87.83928070310725,22.57647638229846,0 87.839157623649,22.5766904826493,0 87.83856393545017,22.5763662082943,0 87.83850735636715,22.57609711654778,0 87.83886878097343,22.57603743208479,0 87.83919738403209,22.57594991432164,0 87.83938726186969,22.57602258461837,0 87.83968319141755,22.57593579370036,0 87.83988540909321,22.57593426296607,0 87.83992392976832,22.57628311046183,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="025AC653D83306AFE5E0">
+			<name>pond_croplnd_6</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83937557632689</longitude>
+				<latitude>22.57757502462967</latitude>
+				<altitude>29.37899098059524</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<gx:fovy>30.00024597120413</gx:fovy>
+				<range>1266.47974796666</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0FF0011B863306A43B66</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.84159009348065,22.57683750120545,0 87.84133001961007,22.57703835034143,0 87.8411214356619,22.57619139083981,0 87.84018970383065,22.57626232410907,0 87.84006021563866,22.5757418307053,0 87.84120803248464,22.57607445867809,0 87.84159009348065,22.57683750120545,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder id="094B20BF35330698762C">
+		<name>waterbody_pond_cropland</name>
+		<styleUrl>#__managed_style_01B20E08E93306980822</styleUrl>
+		<Placemark id="018E55036C3306A1D225">
+			<name>pond_croplnd_1</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83332644113918</longitude>
+				<latitude>22.5695691703856</latitude>
+				<altitude>28.21018861215429</altitude>
+				<heading>-0.05474915034298761</heading>
+				<tilt>0.5738011940260634</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>628.28997315366</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_08330E5DAC3306A222C1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83359303337906,22.56984693959292,0 87.83362533330227,22.56939520775835,0 87.83396507911434,22.56947482178797,0 87.83403243741665,22.56980852594859,0 87.83413327644871,22.57030473604995,0 87.83394027115691,22.57030855145133,0 87.83389644557374,22.57002679046666,0 87.83363902919328,22.5699880647125,0 87.83363919730296,22.5701916162572,0 87.8334312779528,22.57019451422774,0 87.83341998867638,22.57006631819515,0 87.83318805504778,22.57006865053734,0 87.83318955723924,22.57020873054196,0 87.83307745364662,22.57019074766216,0 87.83307979096985,22.57005068436969,0 87.83342347158725,22.57003807252842,0 87.83361599277285,22.56996926109647,0 87.83386694976697,22.57000106054059,0 87.83359303337906,22.56984693959292,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="00AEA48C273306A403C6">
+			<name>pond_croplnd_2</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83541335933542</longitude>
+				<latitude>22.57384671534257</latitude>
+				<altitude>26.42044003009512</altitude>
+				<heading>-0.05474914791303995</heading>
+				<tilt>0.5737948073331189</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>557.3953056911706</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0FF0011B863306A43B66</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83621636887143,22.57375956651367,0 87.83553057224225,22.57393745114196,0 87.83546371454341,22.57368348289117,0 87.83561579043952,22.57362185280352,0 87.83568578035253,22.57350132094233,0 87.83601095636867,22.57348120298291,0 87.83621636887143,22.57375956651367,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="0540C825C83306A46A0C">
+			<name>pond_croplnd_3</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83540651048689</longitude>
+				<latitude>22.57535970113712</latitude>
+				<altitude>27.00996038549919</altitude>
+				<heading>-0.05474915121534999</heading>
+				<tilt>0.5738168316832881</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>801.9720092840726</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0FF0011B863306A43B66</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83566707488485,22.57486186600492,0 87.83564966176849,22.57455669569713,0 87.83581608461117,22.57456813961644,0 87.83592258994985,22.57483144639562,0 87.83566707488485,22.57486186600492,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="0B7ADDA8E73306A62EAB">
+			<name>pond_croplnd_4</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.8323134161423</longitude>
+				<latitude>22.57679538354703</latitude>
+				<altitude>28.22716216910809</altitude>
+				<heading>-0.05474913980555474</heading>
+				<tilt>0.5737817522275975</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>412.4613267954555</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0FF0011B863306A43B66</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83174787745426,22.57678016632347,0 87.83175140865852,22.57649400893733,0 87.83177328343042,22.57644667816612,0 87.83184008798104,22.57643815488321,0 87.83193053261746,22.57645458036092,0 87.83194190569122,22.57647742989919,0 87.83196112136933,22.57674234875524,0 87.83174787745426,22.57678016632347,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="08FA6AA4E53306A6AB34">
+			<name>pond_croplnd_5</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83302891255545</longitude>
+				<latitude>22.57630100851081</latitude>
+				<altitude>25.47322460064953</altitude>
+				<heading>-0.05474914014093935</heading>
+				<tilt>0.5737819999644165</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>415.2154282169796</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0FF0011B863306A43B66</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83284240433585,22.57621613834559,0 87.83277206303698,22.57609929683507,0 87.83289796924949,22.57589079227457,0 87.83295099665887,22.57589024030796,0 87.83294937936225,22.5759872352322,0 87.83302816896223,22.57608624882523,0 87.83302540268559,22.5761605787473,0 87.83284240433585,22.57621613834559,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder id="0903B9924A330698B77F">
+		<name>waterbody_pond_forest</name>
+		<styleUrl>#__managed_style_01B20E08E93306980822</styleUrl>
+		<Placemark id="073115CD3E33069996AA">
+			<name>pond_forest_1</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83301907244282</longitude>
+				<latitude>22.56439017142745</latitude>
+				<altitude>31.22637850910249</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<gx:fovy>30</gx:fovy>
+				<range>489.2342042971723</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0072DE919333069AF002</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83246226071479,22.56390079849893,0 87.832595112245,22.56380807463994,0 87.83275701071875,22.56386274089078,0 87.83280411677221,22.56400931180021,0 87.83280100596218,22.56419917055216,0 87.83287410184944,22.56425347162692,0 87.83305359089464,22.5641319284742,0 87.83318506243025,22.56429033161459,0 87.83303813846319,22.56446552107028,0 87.83306589116465,22.56474656751334,0 87.83288720966628,22.56487552380135,0 87.8327757148236,22.56507235038999,0 87.83269258806568,22.5651327417145,0 87.83229137855309,22.56515585615049,0 87.83208176268859,22.564732991614,0 87.83198627266987,22.5642348545392,0 87.83203449365962,22.56384133502982,0 87.83225049631362,22.56393773998267,0 87.83215011922901,22.56473282078013,0 87.83224878131328,22.56473289972439,0 87.83226762034528,22.56496941983216,0 87.83242905465453,22.56493760347069,0 87.83261671160889,22.5647363379333,0 87.83238606882492,22.56458558443072,0 87.83236222638816,22.5643684597407,0 87.83254070040128,22.56426692509441,0 87.83255160734556,22.56413452424448,0 87.83246226071479,22.56390079849893,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="05ADCE5B2633069E95BF">
+			<name>pond_forest_2</name>
+			<description><![CDATA[<div>geometry_type: polygon</div>]]></description>
+			<LookAt>
+				<longitude>87.83690571333671</longitude>
+				<latitude>22.56686404941057</latitude>
+				<altitude>33.17225541663587</altitude>
+				<heading>-0.05474914418123043</heading>
+				<tilt>0.5737912642730403</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>517.9763280664338</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0072DE919333069AF002</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83630176363793,22.56719900802289,0 87.83616130318678,22.56717532601031,0 87.83614995804564,22.56708379624325,0 87.83630039508085,22.56699087308096,0 87.83637658062973,22.56712693730732,0 87.83630176363793,22.56719900802289,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="09C5D2846B3306A012B7">
+			<name>pond_forest_3</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83652445521872</longitude>
+				<latitude>22.56654688066675</latitude>
+				<altitude>32.47061685343664</altitude>
+				<heading>-0.05474915520074179</heading>
+				<tilt>0.5738195140488868</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>831.6909761559509</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_0072DE919333069AF002</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83813589098615,22.56725947387782,0 87.83794415581256,22.56688941569075,0 87.83770133407803,22.56622644285403,0 87.83779695053821,22.56610031710801,0 87.83797967544972,22.56604955204326,0 87.83831588058752,22.56642624796234,0 87.83842596329862,22.56705656874403,0 87.838436953178,22.56729252250529,0 87.83813589098615,22.56725947387782,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="06BA9B54B23306A3598A">
+			<name>pond_forest_4</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.83470881188852</longitude>
+				<latitude>22.56886585240833</latitude>
+				<altitude>29.64924312738754</altitude>
+				<heading>-0.05474914891950794</heading>
+				<tilt>0.5738010639328524</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>626.8509223646106</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_08330E5DAC3306A222C1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83552984621619,22.56841235233382,0 87.83560371844588,22.56864857761231,0 87.83586086949028,22.56877820442875,0 87.83606587341936,22.56890082460149,0 87.83604533136713,22.56918852472793,0 87.83590384813135,22.56933698270231,0 87.83589420664589,22.56951922680091,0 87.8358517207363,22.56962716250026,0 87.83564082455902,22.56958214683343,0 87.83550367218366,22.569503435509,0 87.83518020062962,22.5695730392364,0 87.83502034614473,22.56967197919038,0 87.83501374390433,22.56929390836264,0 87.83512166949575,22.56833348012526,0 87.83552984621619,22.56841235233382,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder id="054D9939C13306AD27F7">
+		<name>waterbody_lake</name>
+		<styleUrl>#__managed_style_01B20E08E93306980822</styleUrl>
+		<Placemark id="0A53EBE22F3306ACDF8C">
+			<name>lake_1</name>
+			<description><![CDATA[<div>geometry_type: polygon<br></div>]]></description>
+			<LookAt>
+				<longitude>87.8362237785426</longitude>
+				<latitude>22.57743210268166</latitude>
+				<altitude>29.21736841254897</altitude>
+				<heading>-0.0547491428606344</heading>
+				<tilt>0.5738061890619593</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>683.9101390860742</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_070C671C193306AD1BCD</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							87.83706291516896,22.57686956170665,0 87.83701776969407,22.57701026055779,0 87.83664137479249,22.57711490076871,0 87.83642485528776,22.57702211346795,0 87.83642589713833,22.57625569644101,0 87.83701632579645,22.57621247921472,0 87.83714805778745,22.57648620225023,0 87.83706291516896,22.57686956170665,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
