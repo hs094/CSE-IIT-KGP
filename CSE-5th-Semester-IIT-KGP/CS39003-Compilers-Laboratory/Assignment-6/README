@@ -1,0 +1,21 @@
+Assignment 6
+Hardik Soni 20CS30023
+Saurabh Jaiswal 20CS30047
+
+The Test Files are in:
+    `TESTs` folder
+Assembly files are present in the:
+     `ASMs` folder
+TACs are present in:
+     `TACs` folder
+The Binaries produced for tests are in:
+     `BINs` folder
+
+To generate the parser and related libraries run:
+    `make`
+To run the tests run the following command:
+    `make test`
+To clean the object files and compiled binaries run:
+    `make clean`
+    
+Individual test binaries can be run as ./test<num> after   running `make test`
