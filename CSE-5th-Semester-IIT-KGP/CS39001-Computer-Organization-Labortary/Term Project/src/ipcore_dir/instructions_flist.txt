@@ -1,0 +1,17 @@
+# Output products list for <instructions>
+_xmsgs/pn_parser.xmsgs
+instructions/blk_mem_gen_v7_3_readme.txt
+instructions/doc/blk_mem_gen_v7_3_vinfo.html
+instructions/doc/pg058-blk-mem-gen.pdf
+instructions.asy
+instructions.gise
+instructions.mif
+instructions.ngc
+instructions.sym
+instructions.v
+instructions.veo
+instructions.xco
+instructions.xise
+instructions_flist.txt
+instructions_xmdf.tcl
+summary.log

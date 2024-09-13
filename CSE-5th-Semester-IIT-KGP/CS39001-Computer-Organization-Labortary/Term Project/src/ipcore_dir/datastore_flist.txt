@@ -1,0 +1,17 @@
+# Output products list for <datastore>
+_xmsgs/pn_parser.xmsgs
+datastore/blk_mem_gen_v7_3_readme.txt
+datastore/doc/blk_mem_gen_v7_3_vinfo.html
+datastore/doc/pg058-blk-mem-gen.pdf
+datastore.asy
+datastore.gise
+datastore.mif
+datastore.ngc
+datastore.sym
+datastore.v
+datastore.veo
+datastore.xco
+datastore.xise
+datastore_flist.txt
+datastore_xmdf.tcl
+summary.log
