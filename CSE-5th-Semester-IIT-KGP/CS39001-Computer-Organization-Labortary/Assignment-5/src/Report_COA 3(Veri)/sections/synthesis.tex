@@ -1,0 +1,44 @@
+\section{Synthesis Table}
+\subsection{Comparison of 16-bit CLA Adder using Ripple Carry Out vs. Look-ahead Carry-Unit}
+\begin{center}
+\begin{longtable}{|l|l|l|}
+\caption{16-bit CLA Adder Ripple $c_{out}$ vs. Look-ahead }\label{tab:long} \\
+
+\hline 
+\multicolumn{1}{|c|}{\textbf{}} & \multicolumn{1}{c|}{\textbf{Ripple carry out}} & \multicolumn{1}{c|}{\textbf{Look ahead carry unit}} \\ \hline 
+\endfirsthead
+Delay(in ns) & 4.467 ns  & 3.807 ns \\
+Number of Slice LUT's & 24 &  43 \\
+Number of Bonded IOB's & 50   & 52\\
+Levels of Logic & 14 & 11 \\
+\hline
+\end{longtable}
+\end{center}
+
+\subsection{Comparison with 4-bit RCA}
+From the observations mentioned in the table below we can infer wthat CLA(is almost 2.5x) faster than RCA. Also the the Number of Slice LUT's is almost (1/3rd).
+\begin{center}
+\begin{longtable}{|l|l|l|l|l|}
+\caption{Comparison of 4-bit RCA vs. LCA }\label{tab:long} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{4-bit}} & \multicolumn{1}{c|}{\textbf{Delay(in ns)}} & \multicolumn{1}{c|}{\textbf{Number of Slice LUT's}} & \multicolumn{1}{c|}{\textbf{Logic Levels}} &
+\multicolumn{1}{c|}{\textbf{Number of Bonded IOB's}} \\ \hline 
+\endfirsthead
+CLA & 1.551 ns & 6 & 4 & 14\\
+RCA & 4.000 ns & 20 & 20 & 14\\
+\hline
+\end{longtable}
+\end{center}
+\subsection{Comparison with 16-bit RCA}
+From the Observations mentioned in the table belo we can infer that CLA (is almost 3.5x) faster than RCA. Also the number of LUT's used are half as that of RCA.
+\begin{center}
+\begin{longtable}{|l|l|l|l|l|}
+\caption{Comparison of 16-bit RCA vs. LCA }\label{tab:long} \\
+\hline \multicolumn{1}{|c|}{\textbf{16-bit}} & \multicolumn{1}{c|}{\textbf{Delay(in ns)}} & \multicolumn{1}{c|}{\textbf{Number of Slice LUT's}} & \multicolumn{1}{c|}{\textbf{Logic Levels}} &
+\multicolumn{1}{c|}{\textbf{Number of Bonded IOB's}} \\ \hline 
+\endfirsthead
+CLA & 3.807 ns & 43 & 11 & 52 \\
+RCA & 13.466n s & 80 & 70 & 50 \\
+\hline
+\end{longtable}
+\end{center}
