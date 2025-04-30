@@ -1,0 +1,130 @@
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\useoutertheme{miniframes}
+\usetheme{SimpleDarkBlue}
+
+\usepackage{hyperref}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{multicol}
+\usepackage{etoolbox}
+\usepackage{amsmath} % For math symbols
+\usepackage{amssymb} % For math symbols
+\usepackage{listings}
+
+%    TITLE PAGE
+
+\title{AI-Powered Tobacco Cessation using Agentic Conversations}
+\subtitle{Supervisor: Prof. Jayanta Mukhopadhyay}
+
+\author{Hardik Soni}
+
+\institute
+{
+    Department of Computer Science and Engineering \\
+    Indian Institute of Technology Kharagpur % Your institution for the title page
+}
+\date{April 30, 2025} % Date, can be changed to a custom date
+
+
+\begin{document}
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
+% \begin{frame}
+
+%     \begin{figure}[h!]
+%     \includegraphics[width=20mm]{images/logo.jpg}
+%     \end{figure}
+
+%     \begin{center}      
+%     \begin{minipage}[b]{0.7\textwidth}
+%         \centering
+%         Indian Institute of Technology, Kharagpur\\Master's Thesis in Computer Science and Engineering
+%     \end{minipage}%
+%     \end{center}
+
+%     \titlepage
+
+%     \begin{minipage}[t]{0.5\textwidth}
+%         \vspace{-2cm}
+%         \begin{flushleft}
+%             { \textit{Author}:\vspace*{0.1cm} \\ Rushil Venkateswar }
+%         \end{flushleft}
+%     \end{minipage}%
+%             %
+%     \begin{minipage}[t]{0.5\textwidth}
+%         \vspace{-2cm}
+%         \begin{flushright}
+%             {\textit{Supervisor}:\vspace*{0.1cm} \\ Prof. Debdeep Mukhopadhyay \\}
+%         \end{flushright}    
+%     \end{minipage}%
+
+%     \vspace{-0.7cm}
+%     \begin{center}      
+%     \begin{minipage}[b]{0.5\textwidth}
+%         \centering  
+%         \small  
+%         April 30, 2025
+%     \end{minipage}%
+%     \end{center}    
+% \end{frame}
+
+% Include all sections
+\include{sections/introduction}
+\include{sections/background}
+\include{sections/literature}
+\include{sections/methodology}
+\include{presentation/sections/example}
+\include{sections/implementation}
+\include{sections/challenges}
+\include{sections/observation}
+\include{sections/future}
+
+\begin{frame}{References}
+  \tiny
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{thebibliography}{12}
+        \setbeamertemplate{bibliography item}[text]
+        
+        \bibitem{GPT3} Brown, T., et al. (2020). \textit{Language Models are Few-Shot Learners}.
+        
+        \bibitem{RAG} Lewis, P., et al. (2020). \textit{Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks}.
+        
+        \bibitem{Chroma} Reimers, N., and Gurevych, I. (2020). \textit{Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation}.
+        
+        \bibitem{QLoRA2023} Dettmers, T., et al. (2023). \textit{QLoRA: Efficient Finetuning of Quantized LLMs}.
+        
+        \bibitem{hu2022lora} Hu, E. J., et al. (2022). \textit{LoRA: Low-Rank Adaptation of Large Language Models}.
+        
+        \bibitem{RAGHealthcare} Zakka, A., et al. (2023). \textit{Retrieval-Augmented Generation for Healthcare: A Survey}.
+      \end{thebibliography}
+    \end{column}
+    
+    \begin{column}{0.5\textwidth}
+      \begin{thebibliography}{12}
+        \setbeamertemplate{bibliography item}[text]
+        \bibitem[7]{MultiAgentSystems} Park, J. S., et al. (2023). \textit{Generative Agents: Interactive Simulacra of Human Behavior}.
+        
+        \bibitem[8]{AgentRoles} Xi, Z., et al. (2023). \textit{The Role of Roles in LLM-based Cooperative Multi-Agent Systems}.
+        
+        \bibitem[9]{DomainExpertAgents} Chen, S., et al. (2023). \textit{Towards Expert-Level Medical Question Answering with Large Language Models}.
+        
+        \bibitem[10]{ChainOfThought} Wei, J., et al. (2022). \textit{Chain-of-Thought Prompting Elicits Reasoning in Large Language Models}.
+        
+        \bibitem[11]{ProchaskaTobacco} Prochaska, J. J., et al. (2022). \textit{Artificial Intelligence and Mobile Technology for Smoking Cessation}.
+        
+        \bibitem[12]{MedicalLLMFineTuning} Singhal, K., et al. (2023). \textit{Large Language Models Encode Clinical Knowledge}.
+      \end{thebibliography}
+    \end{column}
+  \end{columns}
+\end{frame}
+\begin{frame}[plain]
+  \begin{center}
+    \Huge Thank You!
+    
+    \vspace{1cm}
+    \large Questions?
+  \end{center}
+\end{frame}
+\end{document}

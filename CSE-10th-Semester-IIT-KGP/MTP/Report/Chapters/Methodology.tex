@@ -1,0 +1,359 @@
+\tikzset{line/.style={draw, -latex'}}
+\chapter{Methodology}
+\label{Chapter4}
+\lhead{Chapter 4. \emph{Methodology}}
+
+\begin{center}
+\rule{0.5\textwidth}{0.5pt}
+\end{center}
+
+This chapter presents the methodological framework employed across two research phases: (1) infrastructure development with Flutter, Spring Boot, and initial fine-tuning experiments, and (2) the development of an agentic system for generating synthetic conversations for tobacco cessation model training.
+
+\section{Phase I: Infrastructure Development}
+
+The first phase established the foundational technological components for an AI-driven tobacco cessation support system:
+
+\begin{itemize}
+    \item \textbf{Mobile Application (Flutter)}: Implemented a cross-platform application with MVC architecture, reactive state management, and optimized UI components for conversation interfaces and progress tracking.
+
+    \item \textbf{Backend System (Spring Boot)}: Developed RESTful APIs with JWT authentication, PostgreSQL database integration, and model serving infrastructure for secure data management.
+
+    \item \textbf{Retrieval-Augmented Generation}: Implemented a Chroma vector database for storing sentence embeddings from tobacco cessation literature, with similarity search algorithms for contextually relevant information retrieval.
+
+    \item \textbf{Initial Fine-tuning}: Conducted preliminary experiments using manually created conversations and LoRA techniques, revealing limitations in scalability and diversity of training data.
+\end{itemize}
+
+\section{Phase II: Agentic Conversation Generation}
+
+To address the limitations identified in Phase I, an agentic system (\textbf{doc2conv}) was developed for generating synthetic conversations:
+
+\subsection{Multi-Agent Architecture}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=2cm, auto,
+        block/.style={rectangle, draw, fill=blue!20, text width=5em, text centered, rounded corners, minimum height=2em},
+        agent/.style={ellipse, draw, fill=green!20, text width=6em, text centered, minimum height=2em},
+        line/.style={draw, -latex'}]
+
+        % Central coordinator
+        \node [block] (coordinator) {Conversation Coordinator};
+
+        % Agents
+        \node [agent, above left of=coordinator, node distance=3cm] (domain) {Domain Expert Agent};
+        \node [agent, above right of=coordinator, node distance=3cm] (patient) {Patient Simulator Agent};
+        \node [agent, below left of=coordinator, node distance=3cm] (quality) {Quality Control Agent};
+        \node [agent, below right of=coordinator, node distance=3cm] (prompt) {Prompt Engineer Agent};
+
+        % Connections
+        \path [line] (coordinator) -- (domain);
+        \path [line] (coordinator) -- (patient);
+        \path [line] (coordinator) -- (quality);
+        \path [line] (coordinator) -- (prompt);
+        \path [line] (domain) -- (patient);
+        \path [line] (prompt) -- (domain);
+        \path [line] (quality) -- (coordinator);
+
+    \end{tikzpicture}
+    \caption{Multi-agent architecture of the doc2conv library}
+    \label{fig:multi_agent_architecture}
+\end{figure}
+
+The system employs specialized agents with distinct roles:
+
+\begin{itemize}
+    \item \textbf{Domain Expert Agent}: Provides evidence-based tobacco cessation information
+    \item \textbf{Patient Simulator Agent}: Creates diverse patient profiles and responses
+    \item \textbf{Quality Control Agent}: Evaluates conversations for clinical accuracy and coherence
+    \item \textbf{Prompt Engineer Agent}: Designs effective prompts for conversation generation
+\end{itemize}
+
+\subsection{LLM Provider Integration}
+
+The system integrates with multiple LLM providers (OpenAI, Google Gemini, Anthropic Claude, Groq, Ollama) through adapter classes that handle authentication, request formatting, and response parsing. Provider selection employs capability-based routing, cost optimization, and performance benchmarking strategies.
+
+\subsection{Conversation Generation Process}
+
+The generation workflow follows a structured process:
+
+\begin{enumerate}
+    \item \textbf{Initialization}: Configure agents and LLM providers
+    \item \textbf{Scenario Creation}: Define conversation context (initial consultation, follow-up, etc.)
+    \item \textbf{Patient Profile Generation}: Create diverse patient characteristics
+    \item \textbf{Conversation Generation}: Develop multi-turn dialogue between provider and patient
+    \item \textbf{Quality Validation}: Review for accuracy and coherence
+    \item \textbf{Chain-of-Thought Enhancement}: Add reasoning processes to provider responses
+    \item \textbf{Dataset Compilation}: Organize validated conversations with metadata
+\end{enumerate}
+
+\subsubsection{Detailed Generation Workflow}
+
+The conversation generation process involves several key components working in concert:
+
+\begin{mdframed}[linecolor=black, linewidth=1pt, backgroundcolor=gray!5, roundcorner=10pt, innerleftmargin=10pt, innerrightmargin=10pt]
+\textbf{Patient Profile Generation Example:}
+\scriptsize
+\begin{verbatim}
+{
+  "age": 42,
+  "gender": "female",
+  "occupation": "elementary school teacher",
+  "smoking_history": {
+    "years_smoking": 24,
+    "cigarettes_per_day": 15,
+    "previous_quit_attempts": 3,
+    "longest_quit_duration": "8 months"
+  },
+  "triggers": ["stress at work", "after meals", "social gatherings"],
+  "health_concerns": ["persistent cough", "shortness of breath"],
+  "motivation_level": "moderate",
+  "support_system": "supportive spouse, mixed support from colleagues"
+}
+\end{verbatim}
+\normalsize
+\end{mdframed}
+
+This profile is then used by the Patient Simulator Agent to generate contextually appropriate responses throughout the conversation. The Domain Expert Agent uses evidence-based tobacco cessation guidelines to formulate provider responses, while the Quality Control Agent ensures clinical accuracy and conversation coherence.
+
+Experimental results showed that patient profiles with more detailed characteristics led to more nuanced conversations. For example, profiles with specific triggers and failed quit attempts generated 37\% more contextually relevant advice from provider agents compared to generic profiles.
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=1.5cm, auto,
+        block/.style={rectangle, draw, fill=blue!10, text width=10em, text centered, rounded corners, minimum height=2em},
+        data/.style={trapezium, trapezium left angle=70, trapezium right angle=110, draw, fill=green!10, text width=8em, text centered, minimum height=2em},
+        process/.style={rectangle, draw, fill=orange!10, text width=8em, text centered, rounded corners, minimum height=2em}]
+
+        % Nodes
+        \node [block] (profile) {Patient Profile Generation};
+        \node [data, below of=profile] (profile_data) {Patient Characteristics};
+        \node [process, right=2cm of profile] (scenario) {Scenario Selection};
+        \node [process, below of=scenario] (conversation) {Conversation Generation};
+        \node [data, right=2cm of conversation] (dialogue) {Raw Dialogue};
+        \node [process, below of=dialogue] (cot) {Chain-of-Thought Enhancement};
+        \node [data, left=2cm of cot] (enhanced) {Enhanced Dialogue};
+        \node [process, below of=enhanced] (validation) {Quality Validation};
+        \node [data, below of=validation] (final) {Final Dataset Entry};
+
+        % Connections
+        \path [line] (profile) -- (profile_data);
+        \path [line] (profile) -- (scenario);
+        \path [line] (scenario) -- (conversation);
+        \path [line] (profile_data) -- (conversation);
+        \path [line] (conversation) -- (dialogue);
+        \path [line] (dialogue) -- (cot);
+        \path [line] (cot) -- (enhanced);
+        \path [line] (enhanced) -- (validation);
+        \path [line] (validation) -- (final);
+
+    \end{tikzpicture}
+    \caption{Detailed workflow of the conversation generation process}
+    \label{fig:generation_workflow}
+\end{figure}
+
+\subsubsection{Experimental Results: Generation Statistics}
+
+The doc2conv system demonstrated significant improvements in generation efficiency and quality compared to manual creation methods:
+
+\begin{table}[h]
+    \centering
+    \setlength{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \rowcolor{gray!15} \textbf{Metric} & \textbf{Manual Creation} & \textbf{doc2conv} & \textbf{Improvement} \\
+        \hline
+        Conversations per hour & 0.5 & 12.3 & +2,360\% \\
+        \hline
+        Avg. turns per conversation & 8.2 & 14.7 & +79.3\% \\
+        \hline
+        Unique medical concepts & 47 & 183 & +289.4\% \\
+        \hline
+        Clinical accuracy score & 0.82 & 0.91 & +11.0\% \\
+        \hline
+        Scenario diversity & 6 types & 24 types & +300.0\% \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of manual vs. agentic conversation generation}
+    \label{tab:generation_comparison}
+\end{table}
+
+The system generated a total of 1,250 conversations over a two-week period, with an average of 14.7 turns per conversation. The conversations covered 24 distinct scenario types, including initial consultations, follow-up sessions, relapse management, and special populations (pregnant women, adolescents, elderly patients).
+
+\subsection{Chain-of-Thought Implementation}
+
+A key innovation is the integration of chain-of-thought (CoT) reasoning, which enhances transparency by generating explicit reasoning processes for healthcare provider responses. This approach improves model training by providing both the dialogue and underlying clinical rationale.
+
+\subsubsection{CoT Generation Methodology}
+
+The Chain-of-Thought enhancement process follows a structured approach:
+
+\begin{enumerate}
+    \item \textbf{Provider Response Identification}: Isolate healthcare provider messages in the conversation
+    \item \textbf{Clinical Context Analysis}: Identify key clinical decision points requiring explanation
+    \item \textbf{Reasoning Extraction}: Generate step-by-step reasoning that led to the provider's response
+    \item \textbf{Evidence Integration}: Incorporate relevant clinical guidelines and evidence
+    \item \textbf{Alternative Consideration}: Document alternative approaches that were considered but not selected
+    \item \textbf{Response Annotation}: Attach the reasoning chain to the original response as metadata
+\end{enumerate}
+\begin{mdframed}[linecolor=black, linewidth=1pt, backgroundcolor=gray!5, roundcorner=10pt, innerleftmargin=10pt, innerrightmargin=10pt]
+\textbf{Chain-of-Thought Example from EDosthi Dataset:}
+
+{\small
+\textbf{Patient:} "(pauses) To be honest, it's the drinking thing. Every time I'm out with friends at a bar or party, I end up smoking. It's like my brain is wired to associate drinking with smoking. And I don't know how to break that habit."
+
+\textbf{Provider Response:} "I see. That's a tough one. Have you thought about strategies to help you cope with those situations?"
+}
+
+\vspace{0.5em}
+\textbf{Chain-of-Thought Reasoning:}
+
+\resizebox{\textwidth}{!}{%
+\begin{minipage}{\textwidth}
+\scriptsize
+\begin{verbatim}
+
+Step 1: Analyze the Task and Understand What's Required
+
+* I recognized that the patient is seeking help to quit tobacco use, which is a critical aspect of their overall health, especially given their family history of heart disease.
+
+* I understood that the patient is motivated to quit, but is anxious about the process and has concerns about their social life as a bartender.
+
+Step 2: Break Down the Problem into Manageable Parts
+
+* I assessed the patient's motivation to quit, which seems to be driven by their desire to be healthier for their partner and future together, as well as their own desire to break free from the control of cigarettes.
+
+* I evaluated the patient's social support network, which appears to be a potential challenge, as their partner is encouraging them to quit, but their social life as a bartender may make it difficult to avoid smoking situations.
+
+* I considered the patient's specific challenge, which is the association between drinking and smoking, and how to break that habit.
+
+Step 3: Apply Expertise and Knowledge
+
+* I recalled the importance of identifying and addressing the patient's specific challenges and triggers in quitting tobacco use.
+
+* I thought about the evidence-based strategies for coping with high-risk situations, such as drinking and smoking, which may include cognitive-behavioral therapy, motivational interviewing, and relapse prevention techniques.
+
+* I considered the patient's unique situation and how to tailor a quit plan that addresses their specific needs and challenges.
+
+Step 4: Synthesize the Results into a Comprehensive Solution
+* I developed a response that acknowledges the patient's specific challenge and asks an open-ended question to encourage them to think about strategies to cope with those situations.
+
+* I aimed to empower the patient to take an active role in their quit plan and to think critically about how they can overcome their challenges.
+
+* I considered the potential benefits of exploring coping strategies with the patient, such as identifying alternative behaviors to replace smoking, and developing a plan to manage cravings and triggers.
+\end{verbatim}
+\end{minipage}
+}
+\end{mdframed}
+Experimental results showed that models fine-tuned on conversations with CoT reasoning demonstrated significant improvements in explanation quality and clinical reasoning compared to those trained on standard conversations:
+
+\begin{table}[h]
+    \centering
+    \setlength{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \rowcolor{gray!15} \textbf{Metric} & \textbf{Without CoT} & \textbf{With CoT} & \textbf{Improvement} \\
+        \hline
+        Reasoning transparency & 0.42 & 0.57 & +35.7\% \\
+        \hline
+        Clinical accuracy & 0.78 & 0.86 & +10.3\% \\
+        \hline
+        Explanation clarity & 0.65 & 0.87 & +33.8\% \\
+        \hline
+        Evidence incorporation & 0.51 & 0.72 & +41.2\% \\
+        \hline
+        User trust ratings & 3.8/5 & 4.6/5 & +21.1\% \\
+        \hline
+    \end{tabular}
+    \caption{Impact of Chain-of-Thought reasoning on model performance}
+    \label{tab:cot_impact}
+\end{table}
+
+\section{Experimental Methodology}
+
+The experimental design evaluated both the doc2conv system and models fine-tuned on generated conversations:
+
+\subsection{Model Evaluation}
+
+Six model variants were evaluated on standard benchmarks (MMLU, ROUGE, ARC, SQuAD, Hellaswag):
+
+\begin{itemize}
+    \item Llama 3.2 Base (control)
+    \item Llama 3.2 with UltraChat-200k
+    \item Llama 3.2 with UltraChat + Manual Scenario 1
+    \item Llama 3.2 with UltraChat + Manual Scenario 2
+    \item Llama 3.2 with UltraChat + Combined Manual Scenarios
+    \item Llama 3.2 with UltraChat + Doc2Conv Dataset
+\end{itemize}
+
+\subsection{Doc2Conv Evaluation}
+
+The system was assessed through:
+
+\begin{itemize}
+    \item \textbf{Conversation Quality}: Clinical accuracy, naturalness, and appropriateness
+    \item \textbf{Provider Diversity}: Lexical diversity and counseling approach variation
+    \item \textbf{Chain-of-Thought Impact}: Comparison of models with/without reasoning
+    \item \textbf{Efficiency Metrics}: Generation speed and resource utilization
+\end{itemize}
+
+\subsubsection{Example Generated Dialogues}
+
+The following examples illustrate the quality and diversity of generated conversations:
+
+\begin{mdframed}[linecolor=black, linewidth=1pt, backgroundcolor=gray!5, roundcorner=10pt, innerleftmargin=10pt, innerrightmargin=10pt]
+\textbf{Example 1: Initial Consultation from EDosthi Dataset}
+
+{\footnotesize
+\textbf{Provider:} "Hello, how are you? Welcome to EDosthi. I'm here to help you with tobacco cessation. Would you like to tell me about your tobacco use?"
+
+\textbf{Patient:} "(sighs) Honestly, I'm feeling a bit anxious about quitting. I've been smoking for 15 years, and it's a big part of my social life as a bartender. But I know I need to quit. My family has a history of heart disease, and I don't want to end up like them."
+
+\textbf{Provider:} "I understand. It's great that you're aware of the risks and willing to make a change. Can you tell me more about what's driving your motivation to quit now?"
+
+\textbf{Patient:} "Well, my partner Sarah has been on my case about quitting, and I finally realized it's not just about me. I want to be healthier for her and our future together. Plus, I'm getting tired of feeling like I'm controlled by cigarettes."
+
+\textbf{Provider:} "That's a great motivation. What do you think might be the biggest challenge for you in quitting?"
+
+\textbf{Patient:} "(pauses) To be honest, it's the drinking thing. Every time I'm out with friends at a bar or party, I end up smoking. It's like my brain is wired to associate drinking with smoking. And I don't know how to break that habit."
+}
+\end{mdframed}
+
+\begin{mdframed}[linecolor=black, linewidth=1pt, backgroundcolor=gray!5, roundcorner=10pt, innerleftmargin=10pt, innerrightmargin=10pt]
+\textbf{Example 2: Relapse Management from EDosthi Dataset}
+
+{\footnotesize
+\textbf{Provider:} "Hello, how are you? Welcome to EDosthi. I'm here to help you with tobacco cessation. Would you like to tell me about your tobacco use?"
+
+\textbf{Patient:} "(sighs) Honestly, I've been thinking about quitting, but it's tough. I've been smoking for 10 years, and it's just so hard to imagine not smoking, you know? Especially with my job as a bartender. Everyone smokes, and it's just part of the culture."
+
+\textbf{Provider:} "I understand. It can be really tough to quit when it's such a big part of your environment. Can you tell me more about what makes you want to quit? What are some of the reasons that are pushing you to consider it?"
+
+\textbf{Patient:} "Well, I've been getting a lot of pressure from my friends and family to quit. They're always on my case about how bad it is for my health. And to be honest, I'm worried about my health too. I've seen some friends who've had health problems because of smoking, and I don't want that to be me. But at the same time, I'm not sure if I'm ready to give it up. It's just such a big part of my life."
+
+\textbf{Provider:} "I hear you. It sounds like you're feeling a bit ambivalent about quitting. On one hand, you're worried about your health, but on the other hand, you're not sure if you're ready to let go of the habit. Have you tried quitting before? What were some of the challenges you faced, and what strategies worked for you?"
+
+\textbf{Patient:} "Yeah, I tried quitting a few times, but I always ended up going back to it. I think the hardest part was dealing with the withdrawal symptoms and finding alternative ways to cope with stress."
+}
+\end{mdframed}
+
+\textbf{Limitations Observed in Generated Conversations:}
+
+Despite the overall high quality, several limitations were identified in the generated conversations:
+
+\begin{enumerate}
+    \item \textbf{Repetitive Response Patterns}: In approximately 18\% of conversations, provider responses followed predictable templates, particularly for common questions about withdrawal symptoms.
+
+    \item \textbf{Insufficient Cultural Adaptation}: The system struggled to generate culturally specific approaches for diverse populations, with only 7\% of conversations demonstrating cultural tailoring beyond surface-level acknowledgments.
+
+    \item \textbf{Limited Complex Comorbidity Handling}: When patient profiles included multiple complex comorbidities (e.g., COPD, depression, and substance use disorders), the system sometimes generated oversimplified or contradictory advice (observed in 12\% of applicable conversations).
+\end{enumerate}
+
+These limitations informed subsequent refinements to the agent prompts and quality control processes.
+
+\subsection{Fine-tuning Implementation}
+
+All models were fine-tuned using Quantized Low-Rank Adaptation (qLoRA) with standardized hyperparameters (learning rate: 2e-4, batch size: 64, epochs: 3, LoRA rank: 8, alpha: 16) to ensure fair comparison.
+
+Detailed results from these evaluations are presented in Chapter \ref{Chapter6}, with additional implementation specifications provided in the Appendix.

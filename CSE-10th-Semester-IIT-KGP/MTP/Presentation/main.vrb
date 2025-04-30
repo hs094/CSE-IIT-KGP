@@ -1,0 +1,26 @@
+\frametitle{Synchronization Code}
+\begin{lstlisting}[basicstyle=\tiny, language=bash]
+# OOB polling and measurement script (simplified)
+while true; do
+    # Read the LSB of IA32_PMC0
+    pmc0_value=$(read_msr $IA32_PMC0)
+    bit_set=$((pmc0_value & 1))
+
+    if [ "$bit_set" -eq 1 ] && [ "$measuring" = false ]; then
+        # Start of measurement
+        measuring=true
+        start_energy=$(read_pkg_energy $PECI_MBX_INDEX_EPI)
+    elif [ "$bit_set" -eq 0 ] && [ "$measuring" = true ]; then
+        # End of measurement
+        measuring=false
+        end_energy=$(read_pkg_energy $PECI_MBX_INDEX_EPI)
+        energy_diff=$((end_energy - start_energy))
+
+        # Write to the output file
+        echo "$counter,$energy_diff" >> "$OUTPUT_FILE"
+        counter=$((counter + 1))
+    fi
+
+    sleep $POLL_INTERVAL
+done
+\end{lstlisting}

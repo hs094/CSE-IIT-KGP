@@ -1,0 +1,373 @@
+\documentclass[12pt, a4paper, oneside]{Thesis} % Paper size, default font size and one-sided paper
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{tabularray}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tcolorbox}
+\usepackage{graphicx} 
+\usepackage{mdframed}
+\usepackage{colortbl}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning, fit, backgrounds, calc, shadows, decorations.pathmorphing}
+\usepackage{tabularx} % Add this line in the preamble
+
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{stackengine}
+\usepackage{url}
+\usepackage{numprint}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{siunitx}
+% \usepackage[showframe=false]{geometry}
+\usepackage{subfigure}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% \documentclass{article}
+
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+%Code listing style named "mystyle"
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},   commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  keepspaces=true,
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2
+}
+
+%"mystyle" code listing set
+\lstset{style=mystyle}
+
+
+\nprounddigits{3}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\setstackEOL{\#}
+\setstackgap{L}{12pt}
+
+
+%\usepackage{subcaption} %incompatible with subfig
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+\usepackage{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' v
+
+\hypersetup{urlcolor=black, colorlinks=false} % Colors hyperlinks in blue - change to black if annoyingv`
+
+\thesistitle{SmokeCtrl: AI-Driven Mobile App for Tobacco Cessation Using Agentic Dialogues}
+\supervisor{Professor Jayanta Mukhopadhyay}
+\degree{Master of Technology}
+\degreemajor{Computer Science and Engineering}
+\authors{Hardik Pravin Soni}
+\rollno{20CS30023}
+\university{Indian Institute of Technology Kharagpur}
+\department{Department of Computer Science and Engineering}
+\unisite{http://www.iitkgp.ac.in}
+\depsite{https://cse.iitkgp.ac.in/}
+\placeshrt{Kharagpur}
+\placelng{Kharagpur - 721302, India}
+\datesub{April 22, 2025}
+\datesig{April 22, 2025}
+\semsub{Spring Semester, 2024-25}
+\keywords{Steel Structure}
+\coursecd{Project-IV (CS57004) }
+
+\usepackage{listings}
+\lstset{
+  basicstyle=\scriptsize\ttfamily,
+  breaklines=true,
+  frame=none,
+  backgroundcolor=\color{gray!5},
+  columns=fullflexible
+}
+
+\title{\ttitle} % Defines the thesis title - don't touch this
+\begin{document}
+%\makeatletter
+%\renewcommand*{\NAT@nmfmt}[1]{\textsc{#1}}
+%\makeatother
+
+% prints author names as small caps
+
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\setstretch{1} % Line spacing of 1.6 (double line spacing)
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{} % Clears all page headers and footers
+\rhead{\thepage} % Sets the right side header to show the page number
+\lhead{} % Clears the left side page header
+
+%\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
+% PDF meta-data
+\hypersetup{pdftitle={\ttitle}}
+\hypersetup{pdfsubject=\subjectname}
+\hypersetup{pdfauthor=\authornames}
+\hypersetup{pdfkeywords=\keywordnames}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\maketitle
+%\titlepg % Add a gap in the Contents, for aesthetics
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%	Your institution may give you a different text to place here
+%----------------------------------------------------------------------------------------
+
+
+\Declaration% Add a gap in the Contents, for aesthetics
+
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATE PAGE
+%----------------------------------------------------------------------------------------
+
+\addtotoc{Certificate} % Add the "Abstract" page entry to the Contents
+
+\certificate{\addtocontents{toc}{}} % Add a gap in the Contents, for aesthetics
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\addtotoc{Abstract} % Add the "Abstract" page entry to the Contents
+
+\abstract{\addtocontents{toc}{} % Add a gap in the Contents, for aesthetics
+\textbf{SmokeCtrl: A Flutter-based mobile app leveraging Llama 3.2 and agentic-based conversation generation to support and guide tobacco cessation for a healthier, smoke-free life.}
+
+\textbf{SmokeCtrl} is a mobile application developed using \textbf{Flutter}, designed specifically to assist patients in overcoming \textbf{tobacco addiction}. By leveraging the capabilities of \textbf{large language models (LLMs)}, SmokeCtrl provides \textit{intelligent} and \textit{tailored} responses to users' medical queries, supporting their journey towards cessation. The application features:
+
+\begin{itemize}
+    \item A \textbf{simple, dynamic, and user-friendly UI} for easy navigation, offering \textbf{login} and \textbf{sign-up} functionalities.
+    \item Back-end integration with \textbf{Spring} to manage user authentication and database operations.
+    \item \textbf{Llama 3.2-based model inference}, offering interactive and responsive dialogue for users by generating relevant responses to prompts.
+    \item \textbf{Retrieval-Augmented Generation (RAG)} setup using \textbf{LangChain}, with a \textit{Chroma database} to support \textit{context-aware} response generation.
+    \item Fine-tuning of \textbf{Llama 3.2} using \textbf{Quantized Low-Rank Adaptation (qLoRA)} to optimize performance specifically for conversational and retrieval tasks.
+    \item A novel \textbf{doc2conv} agentic-based library that enables \textit{automated generation} of high-quality synthetic conversations for model fine-tuning.
+    \item Integration with multiple \textbf{LLM providers} (OpenAI, Google Gemini, Anthropic Claude, Groq, Ollama) for flexible and robust conversation generation.
+    \item \textbf{Chain-of-thought reasoning} capabilities that enhance the transparency and quality of generated healthcare advice.
+\end{itemize}
+
+Beyond assisting individual users, SmokeCtrl contributes to \textbf{societal well-being} by:
+
+\begin{enumerate}
+    \item Encouraging \textbf{public health awareness} about tobacco’s adverse effects, reaching a broad audience through \textbf{mobile accessibility}.
+    \item Reducing \textbf{healthcare costs} by promoting early interventions and preventive measures in tobacco cessation.
+    \item Supporting \textbf{healthcare providers} with valuable insights
+    into patient progress, facilitating better-targeted support.
+    \item Enhancing \textbf{mental and emotional well-being} by providing round-the-clock access to resources and personalized motivation.
+    \item Strengthening \textbf{community health} by promoting a culture of wellness and offering a tool for family and friends to support users in their cessation journey.
+    \item Advancing \textbf{AI research in healthcare} through the development of agentic systems that can generate high-quality, domain-specific training data.
+\end{enumerate}
+
+\textbf{Keywords}: Tobacco cessation, Flutter application, large language model, retrieval-augmented generation, Quantized qLoRA, agentic systems, synthetic data generation
+
+}
+
+\clearpage % Start a new page
+
+
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\setstretch{1.0} % Reset the line-spacing to 1.3 for body text (if it has changed)
+
+\acknowledgements{\addtocontents{toc}{}%\vspace{1em}} % Add a gap in the Contents, for aesthetics
+
+I express my sincere gratitude to my supervisor, Professor Jayanta Mukhopadhyay, for granting me the opportunity to work under his mentorship. Throughout my M.Tech project, he provided insightful guidance and constructive feedback. He was consistently supportive and understanding.
+
+I am grateful for the chance to have worked on this project and to have learned from the people I have met along the way. This project has been challenging but rewarding, and I am proud of what I have achieved. I would also like to extend my warmest gratitude to my family and friends at IIT Kharagpur for their unwavering support and motivation throughout my journey.
+}
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+
+\lhead{\emph{Contents}} % Set the left side page header to "Contents"
+\tableofcontents % Write out the Table of Contents
+
+\lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
+\listoffigures % Write out the List of Figures
+
+\lhead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
+\listoftables % Write out the List of Tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+
+\setstretch{1.5} % Set the line spacing to 1.5, this makes the following tables easier to read
+
+\lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
+\listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
+{
+
+\textbf{LLM} & \textbf{L}arge \textbf{L}anguage \textbf{M}odel \\
+\textbf{NLP} & \textbf{N}atural \textbf{L}anguage \textbf{P}rocessing \\
+\textbf{mHealth} & \textbf{M}obile \textbf{H}ealth \\
+\textbf{RAG} & \textbf{R}etrieval-\textbf{A}ugmented \textbf{G}eneration \\
+\textbf{qLoRA} & \textbf{Q}uantized \textbf{L}ow-\textbf{R}ank \textbf{A}daptation \\
+\textbf{UI} & \textbf{U}ser \textbf{I}nterface \\
+\textbf{API} & \textbf{A}pplication \textbf{P}rogramming \textbf{I}nterface \\
+\textbf{JWT} & \textbf{J}SON \textbf{W}eb \textbf{T}oken (used for authentication) \\
+\textbf{CRUD} & \textbf{C}reate, \textbf{R}ead, \textbf{U}pdate, \textbf{D}elete (basic database operations) \\
+\textbf{GPU} & \textbf{G}raphics \textbf{P}rocessing \textbf{U}nit \\
+\textbf{ML} & \textbf{M}achine \textbf{L}earning \\
+\textbf{AI} & \textbf{A}rtificial \textbf{I}ntelligence \\
+\textbf{SSL} & \textbf{S}ecure \textbf{S}ockets \textbf{L}ayer (for secure data transmission) \\
+\textbf{HTTP} & \textbf{H}ypertext \textbf{T}ransfer \textbf{P}rotocol \\
+\textbf{SDK} & \textbf{S}oftware \textbf{D}evelopment \textbf{K}it \\
+\textbf{UX} & \textbf{U}ser \textbf{E}xperience \\
+\textbf{DB} & \textbf{D}atabase \\
+\textbf{OAuth} & \textbf{O}pen \textbf{A}uthorization (often used for user authentication) \\
+\textbf{REST} & \textbf{R}epresentational \textbf{S}tate \textbf{T}ransfer (API architectural style) \\
+\textbf{CoT} & \textbf{C}hain-\textbf{o}f-\textbf{T}hought (reasoning process in LLMs) \\
+\textbf{doc2conv} & \textbf{Doc}ument \textbf{to} \textbf{Conv}ersation (agentic library for synthetic data generation) \\
+\textbf{SFT} & \textbf{S}upervised \textbf{F}ine-\textbf{T}uning (method for training LLMs on specific tasks) \\
+}
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+%
+%\clearpage % Start a new page
+%
+%\lhead{\emph{Physical Constants}} % Set the left side page header to "Physical Constants"
+%
+%\listofconstants{lrcl} % Include a list of Physical Constants (a four column table)
+%{
+%Speed of Light & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}^{-\mbox{s}}$ (exact)\\
+%% Constant Name & Symbol & = & Constant Value (with units) \\
+%}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+
+% \lhead{\emph{Symbols}} % Set the left side page header to "Symbols"
+
+% \listofnomenclature{lll} % Include a list of Symbols (a two column table)
+% {
+% $\psi$ & Eigen Vector & \\
+% $||\?\rangle$ & Quantum Bit & \\
+% $H$ & Hadamard Gate & \\
+% $X$ & Pauli X Gate & \\
+% $Y$ & Pauli Y Gate & \\
+% $Z$ & Pauli Z Gate & \\
+% $SWAP$ & Swap Quantum Gate & \\
+% $CNOT$ & Controlled-NOT Gate & \\
+% $CP(\lambda)$ & Controlled Phase Gate & \\
+% $\mathbb{C}$ & Complex Number & \\
+% $\oplus$ & Tensor Product & \\
+% $\theta$ & Phase & \\
+% $CROT_k$ & Two-qubit controlled rotation in Block-diagonal Form & \\
+% }
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+%
+%\setstretch{1.3} % Return the line spacing back to 1.3
+%
+%\pagestyle{empty} % Page style needs to be empty for this page
+%
+%\dedicatory{For/Dedicated to/To my\ldots} % Dedication text
+%
+%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+
+\input{Chapters/Introduction}
+\input{Chapters/Background}
+\input{Chapters/Literature Review}
+\input{Chapters/Methodology}
+\input{Chapters/Implementation}
+\input{Chapters/Results and Observations}
+\input{Chapters/Conclusion}
+\input{Chapters/Future Work}
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+% \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+% \appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% % Include the appendices of the thesis as separate files from the Appendices folder
+% % Uncomment the lines as you write the Appendices
+
+% \input{Appendices/AppendixA}
+% %\input{Appendices/AppendixB}
+% %\input{Appendices/AppendixC}
+
+% \addtocontents{toc}{} % Add a gap in the Contents, for aesthetics
+
+% \backmatter
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+%\nocite{*}
+\input{bibilography}
+% \bibliographystyle{abbrv} % Use the "custom" BibTeX style for formatting the Bibliography
+% \bibliography{Bibliography.tex} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+\end{document}

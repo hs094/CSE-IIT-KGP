@@ -1,0 +1,108 @@
+\chapter{Introduction} % Main chapter title
+
+\label{Chapter1} % For referencing this chapter elsewhere, use \ref{Chapter1}
+
+\lhead{Chapter 1. \emph{Introduction}} % This is for the header on each page
+
+\begin{center}
+\rule{0.5\textwidth}{0.5pt}
+\end{center}
+
+\section{Overview}
+\begin{quotation}
+\noindent Tobacco use remains one of the leading preventable causes of death worldwide, with over 8 million deaths annually attributed to direct tobacco use and second-hand smoke exposure. Despite decades of public health initiatives, the challenge of effective tobacco cessation persists, with success rates for unassisted quit attempts hovering below 10\%. The emergence of \textbf{artificial intelligence (AI)} and \textbf{natural language processing (NLP)} technologies presents unprecedented opportunities to address this challenge through personalized, accessible, and scalable interventions.
+\end{quotation}
+
+Recent advances in \textbf{large language models (LLMs)} have demonstrated remarkable capabilities in understanding context, generating human-like text, and engaging in meaningful dialogue. These capabilities make LLMs particularly well-suited for health interventions that require nuanced, personalized communication. However, the effectiveness of these models in specialized domains like tobacco cessation depends heavily on their training data—specifically, their exposure to relevant, high-quality conversations that reflect the complexities of addiction recovery.
+
+\begin{figure}[h]
+\centering
+\fbox{\parbox{0.9\textwidth}{\centering
+\textbf{Data Scarcity Challenge}\\[0.2cm]
+A significant barrier to developing effective AI-driven tobacco cessation tools is the scarcity of domain-specific training data. Conversations between healthcare providers and individuals seeking to quit tobacco are rarely documented in formats suitable for model training. Moreover, these conversations contain sensitive personal health information that cannot be freely shared for AI development.}}
+\caption{The central challenge addressed by this research}
+\label{fig:data-scarcity}
+\end{figure}
+
+This data scarcity creates a bottleneck in the development pipeline for specialized healthcare AI applications, limiting the potential impact of technological innovations in addressing one of the world's most significant public health challenges.
+
+\section{Problem Statement}
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!75!black,title=Research Problem]
+The development of effective AI systems for tobacco cessation faces a critical challenge: the lack of diverse, high-quality conversational data needed to train and fine-tune language models for this specialized healthcare domain. Existing approaches to generating synthetic training data often produce conversations that lack the nuance, clinical accuracy, and conversational depth required for effective tobacco cessation support. This limitation hampers the development of AI systems that can provide personalized, contextually appropriate guidance to individuals attempting to quit tobacco use.
+\end{tcolorbox}
+
+This research addresses this fundamental challenge by investigating:
+
+\begin{quote}
+\textit{How can we develop an \textbf{agentic system} that generates realistic, clinically accurate conversations between healthcare providers and individuals seeking tobacco cessation support, suitable for fine-tuning open-source language models for tobacco cessation applications?}
+\end{quote}
+
+\section{Research Questions}
+This research explores the following questions:
+
+\begin{enumerate}[label=\textbf{RQ\arabic*.}, leftmargin=1.5cm, itemsep=0.3cm]
+\item \textit{How can multi-agent systems be designed to simulate realistic conversations between healthcare providers and individuals seeking tobacco cessation support?}
+
+\item \textit{What conversational structures and clinical protocols best represent effective tobacco cessation counseling for training data generation?}
+
+\item \textit{How can we ensure clinical accuracy and adherence to evidence-based tobacco cessation guidelines in synthetically generated conversations?}
+
+\item \textit{What role does persona diversity (both provider and patient) play in generating training data that supports robust model generalization?}
+
+\item \textit{How does the quality of synthetically generated conversations compare to real-world tobacco cessation counseling sessions?}
+
+\item \textit{What impact does training on synthetically generated conversations have on the performance of open-source language models for tobacco cessation applications?}
+
+\item \textit{How can chain-of-thought reasoning improve the transparency and clinical reasoning capabilities of language models fine-tuned for tobacco cessation?}
+\end{enumerate}
+
+\section{Objective of the Thesis}
+This thesis presents the design, development, and evaluation of an agentic system for generating high-quality synthetic conversations for tobacco cessation. Key objectives include:
+
+\begin{itemize}[label=$\bullet$, leftmargin=1cm, itemsep=0.2cm]
+\item Developing a \textbf{multi-agent architecture} that simulates realistic provider-patient interactions for tobacco cessation counseling.
+
+\item Implementing \textbf{evidence-based clinical protocols} and conversational structures that reflect best practices in tobacco cessation support.
+
+\item Creating \textbf{diverse patient and provider personas} to ensure generated conversations cover a wide range of cessation scenarios and approaches.
+
+\item Evaluating the \textbf{quality, clinical accuracy, and conversational depth} of synthetically generated dialogues.
+
+\item Assessing the impact of training on these synthetic conversations on the performance of \textbf{open-source language models} for tobacco cessation applications.
+\end{itemize}
+
+\section{Scope}
+\begin{minipage}{\textwidth}
+This research encompasses the development and evaluation of an agentic system for generating synthetic tobacco cessation conversations, with a focus on:
+\end{minipage}
+
+\begin{center}
+\begin{tabular}{|p{0.95\textwidth}|}
+\hline
+\cellcolor{gray!15} \textbf{Design} \\
+$\circ$ Designing a flexible multi-agent architecture that can simulate various tobacco cessation counseling scenarios and approaches. \\
+\hline
+\cellcolor{gray!15} \textbf{Implementation} \\
+$\circ$ Implementing evidence-based tobacco cessation protocols and guidelines within the conversation generation system. \\
+$\circ$ Developing methods for ensuring clinical accuracy and conversational quality in generated dialogues. \\
+$\circ$ Creating a diverse set of patient and provider personas that reflect the range of individuals involved in tobacco cessation efforts. \\
+\hline
+\cellcolor{gray!15} \textbf{Evaluation} \\
+$\circ$ Evaluating the effectiveness of synthetic conversations for fine-tuning open-source language models (including Llama, Mistral, and other accessible models). \\
+$\circ$ Assessing the performance of fine-tuned models on tobacco cessation counseling tasks, including accuracy of clinical information, appropriateness of recommendations, and conversational quality. \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+\begin{center}
+\begin{minipage}{0.9\textwidth}
+\begin{center}
+\textit{This research aims to address a critical gap in the development of AI systems for tobacco cessation by providing a methodology for generating high-quality training data. The resulting fine-tuned models have the potential to significantly enhance the accessibility and effectiveness of tobacco cessation support, with broader implications for AI applications in healthcare and behavior change.}
+\end{center}
+\end{minipage}
+\end{center}
+
+\begin{center}
+\rule{0.7\textwidth}{0.5pt}
+\end{center}

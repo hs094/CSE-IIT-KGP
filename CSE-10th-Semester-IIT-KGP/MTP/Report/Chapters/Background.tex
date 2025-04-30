@@ -1,0 +1,137 @@
+\chapter{Background}
+\label{Chapter2}
+\lhead{Chapter 2. \emph{Background}}
+
+\begin{center}
+\rule{0.5\textwidth}{0.5pt}
+\end{center}
+
+This chapter outlines the foundational concepts in mobile health and artificial intelligence for tobacco cessation, providing context for our research and summarizing the completed work from the previous phase that established the technological foundation for the current agentic system development.
+
+\section{Foundations of AI-Driven Tobacco Cessation}
+
+\subsection{Tobacco Cessation and Digital Support}
+
+Tobacco use remains a leading cause of preventable disease worldwide. Effective cessation support typically requires:
+
+\begin{itemize}
+    \item Behavioral support and counseling
+    \item Withdrawal management strategies
+    \item Consistent motivation and reinforcement
+    \item Personalized interventions
+\end{itemize}
+
+Digital tools offer real-time, accessible interventions at critical moments when cravings or relapse risks are highest, leveraging the ubiquity of smartphones to provide continuous, personalized cessation support at scale.
+
+\subsection{Mobile Health Applications}
+
+Modern mHealth applications have evolved from static information repositories to dynamic platforms supporting complex addiction recovery journeys. While existing applications like Quit Genius and Smoke Free leverage behavioral science principles, they often lack adaptive, context-aware support necessary for addressing the complex nature of tobacco cessation.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|>{}p{5cm}|>{}p{5cm}|}
+        \hline
+        \rowcolor{gray!15} \textbf{Benefits} & \textbf{Current Limitations} \\
+        \hline
+        Accessibility and convenience & Limited personalization \\
+        \hline
+        Real-time support & Inadequate relapse prevention \\
+        \hline
+        Progress tracking & Insufficient evidence-based content \\
+        \hline
+        Non-judgmental environment & Generic response patterns \\
+        \hline
+    \end{tabular}
+    \caption{Benefits and Limitations of Current Tobacco Cessation Apps}
+    \label{tab:mhealth_comparison}
+\end{table}
+
+\section{Technological Foundations}
+
+\subsection{Large Language Models in Healthcare}
+
+Large Language Models (LLMs) offer several key capabilities for tobacco cessation:
+
+\begin{itemize}
+    \item Natural language processing for understanding nuanced user queries
+    \item Personalization capabilities that adapt responses based on user history
+    \item Real-time interaction that simulates human conversation
+    \item Knowledge integration of evidence-based cessation strategies
+\end{itemize}
+
+\section{Completed Work and Transition to Agentic Systems}
+
+The initial phase of this research established the technological infrastructure necessary for an AI-driven tobacco cessation support system.
+
+\subsection{Mobile Application Development}
+
+A cross-platform mobile application was developed using the Flutter framework, providing:
+
+\begin{itemize}
+    \item Unified codebase delivering consistent experience across Android and iOS
+    \item Intuitive, responsive user interface optimized for engagement
+    \item Real-time chat functionality with multimedia support
+    \item Progress tracking visualizations and goal-setting features
+\end{itemize}
+
+\subsection{Backend Infrastructure}
+
+A robust backend system was implemented using Spring Boot, featuring:
+
+\begin{itemize}
+    \item Secure JWT-based authentication with role-based access control
+    \item RESTful APIs for user profiles, cessation plans, and progress tracking
+    \item Systems for tracking user interactions and conversation history
+    \item Secure endpoints for communication with language model services
+\end{itemize}
+
+\subsection{Retrieval-Augmented Generation Implementation}
+
+The Retrieval-Augmented Generation (RAG) mechanism enhances AI-generated responses by grounding them in authoritative information:
+
+\begin{itemize}
+    \item Chroma vector database for efficient storage and retrieval of embeddings
+    \item Knowledge base of evidence-based tobacco cessation information
+    \item Similarity search algorithms to identify relevant information
+    \item Context-aware response generation incorporating retrieved information
+\end{itemize}
+
+\subsection{Initial Model Fine-tuning Efforts}
+
+Preliminary work on model fine-tuning was conducted using manually created conversation datasets, revealing a critical limitation: manual creation of training conversations was not scalable and could not capture the full diversity of tobacco cessation scenarios needed for robust model training.
+
+\subsubsection{Evaluation Metrics for Model Performance}
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!75!black,title=Key Performance Metrics for Language Models]
+The evaluation of language models for healthcare applications requires specialized metrics that assess both linguistic quality and clinical utility. The following metrics were used to evaluate our fine-tuned models:
+\end{tcolorbox}
+
+\begin{itemize}[label=$\bullet$, leftmargin=1cm, itemsep=0.2cm]
+\item \textbf{ROUGE-L}: Measures the longest common subsequence between generated and reference texts, capturing fluency and content preservation. Higher scores indicate better alignment with reference responses.
+
+\item \textbf{BLEU}: Evaluates n-gram precision between generated and reference texts, providing insight into lexical accuracy. Particularly useful for assessing adherence to clinical terminology.
+
+\item \textbf{METEOR}: Considers synonyms, stemming, and word order, offering a more flexible evaluation of semantic similarity than BLEU. Valuable for healthcare contexts where multiple phrasings may be clinically equivalent.
+
+\item \textbf{SQuAD}: Adapted from question-answering tasks to assess the model's ability to provide accurate information in response to specific queries. Critical for evaluating clinical knowledge retrieval.
+
+\item \textbf{F1 Score}: Balances precision and recall, measuring the model's ability to provide complete and accurate information without irrelevant content. Essential for evaluating clinical advice quality.
+\end{itemize}
+
+These metrics showed significant improvement throughout the fine-tuning process, with evaluation loss decreasing by 37.86\% and BLEU scores increasing by 32.87\% from first to last epoch, demonstrating the effectiveness of our approach.
+
+\subsection{Transition to Agentic Systems}
+
+The data scarcity challenge identified during the initial phase serves as the primary motivation for the current research focus on agentic conversation generation. This approach leverages multiple AI agents working in concert to simulate realistic tobacco cessation counseling scenarios, creating a rich dataset that captures:
+
+\begin{itemize}
+    \item Diverse patient backgrounds and addiction patterns
+    \item Evidence-based counseling techniques and intervention strategies
+    \item Common relapse triggers and effective coping mechanisms
+    \item Progressive cessation journeys with realistic challenges
+    \item Various counseling styles and therapeutic approaches
+\end{itemize}
+
+This synthetic data generation approach not only overcomes the data availability barrier but also enables controlled variation of conversation parameters, allowing for comprehensive model training across a wide spectrum of cessation scenarios.
+
+The following chapters detail the methodology behind this agentic system for conversation generation, its implementation, evaluation, and integration with the existing technological infrastructure developed in the first phase of this research.

@@ -1,0 +1,137 @@
+
+\chapter{Literature Review} % Main chapter title
+\label{Chapter3} % For referencing this chapter elsewhere, use \ref{Chapter3}
+\lhead{Chapter 3. \emph{Literature Review}}
+
+\begin{center}
+\rule{0.5\textwidth}{0.5pt}
+\end{center}
+
+\begin{quotation}
+This chapter presents a focused review of the literature underpinning the development of an agentic system for generating synthetic conversations for tobacco cessation. It examines key research in language models, fine-tuning techniques, retrieval-augmented generation, and mobile application development—areas that form the foundation of our completed work in Flutter frontend development, Spring Boot backend implementation, RAG systems, and model fine-tuning.
+\end{quotation}
+
+\section{Foundation Models for Healthcare Applications}
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!75!black,title=Evolution of Language Models in Healthcare]
+The application of large language models (LLMs) to healthcare domains has evolved rapidly, from general-purpose models to specialized architectures designed for medical contexts. This evolution provides the theoretical foundation for our tobacco cessation support system.
+\end{tcolorbox}
+
+The transformer architecture introduced by Vaswani et al. \cite{Vaswani} revolutionized natural language processing by enabling parallel computation and more effective modeling of long-range dependencies. This innovation led to the development of bidirectional models like BERT \cite{BERT} and autoregressive models like GPT \cite{GPT}, each offering distinct advantages for different NLP tasks. The healthcare domain has benefited from specialized adaptations of these architectures, with models like BioBERT \cite{BioBERT} and ClinicalBERT \cite{ClinicalBERT} demonstrating superior performance on medical tasks through domain-specific pre-training.
+
+Recent research by Singhal et al. \cite{MedicalLLMFineTuning} has shown that large language models can effectively encode clinical knowledge, achieving performance comparable to medical professionals on certain diagnostic and treatment planning tasks. This finding is particularly relevant to our work, as it suggests that properly fine-tuned LLMs can provide valuable support for specialized healthcare applications like tobacco cessation.
+
+\section{Efficient Fine-Tuning Techniques}
+
+\begin{figure}[h]
+\centering
+\fbox{\parbox{0.9\textwidth}{\centering
+\textbf{Parameter-Efficient Fine-Tuning Approaches}\\[0.2cm]
+Traditional fine-tuning: Updates all model parameters\\[0.1cm]
+LoRA: Adds low-rank adaptation matrices to frozen weights\\[0.1cm]
+qLoRA: Combines quantization with low-rank adaptation}}
+\caption{Evolution of fine-tuning approaches for large language models}
+\label{fig:finetuning-approaches}
+\end{figure}
+
+Our completed work on fine-tuning using hand-written conversations builds upon significant advancements in Parameter-Efficient Fine-Tuning (PEFT) techniques. These approaches have made it possible to adapt large language models for specialized domains with limited computational resources \cite{PEFT}. Two techniques have been particularly influential in our work:
+
+\begin{itemize}[label=$\bullet$, leftmargin=1cm, itemsep=0.2cm]
+\item \textbf{Low-Rank Adaptation (LoRA)}: Introduced by Hu et al. \cite{hu2022lora}, LoRA significantly reduces memory requirements while maintaining performance by adding trainable low-rank matrices to frozen pre-trained weights.
+
+\item \textbf{Quantized LoRA (qLoRA)}: Developed by Dettmers et al. \cite{QLoRA2023}, qLoRA further reduces memory footprint through 4-bit quantization, enabling fine-tuning of models like Llama 3.2 on consumer-grade hardware.
+\end{itemize}
+
+Xu et al. \cite{LLMFineTuning} demonstrated that the implementation of these techniques for domain-specific applications involves careful consideration of target module selection, rank and alpha configuration, and quantization parameters. Our fine-tuning work with hand-written tobacco cessation conversations has applied these principles, focusing adaptation on attention mechanisms and feed-forward networks while optimizing memory usage through appropriate quantization strategies.
+
+\section{Retrieval-Augmented Generation Systems}
+
+\begin{tikzpicture}[node distance=0.5cm, every node/.style={rectangle, rounded corners, draw, minimum width=\textwidth-2cm}]
+\node[fill=gray!10, text width=\textwidth-2.5cm] (n1) {\textbf{1. Query Processing:} User question about tobacco cessation is analyzed and converted to embeddings};
+\node[below=of n1, fill=gray!10, text width=\textwidth-2.5cm] (n2) {\textbf{2. Retrieval:} Vector database searches for relevant medical information based on semantic similarity};
+\node[below=of n2, fill=gray!10, text width=\textwidth-2.5cm] (n3) {\textbf{3. Context Integration:} Retrieved information is incorporated into the prompt for the language model};
+\node[below=of n3, fill=gray!10, text width=\textwidth-2.5cm] (n4) {\textbf{4. Response Generation:} Model generates factually grounded, contextually appropriate response};
+\end{tikzpicture}
+
+Our implementation of Retrieval-Augmented Generation (RAG) builds upon the foundational work of Lewis et al. \cite{RAG}, who demonstrated that combining retrieval mechanisms with generative models significantly improves response accuracy and factual grounding. This approach has proven particularly valuable in healthcare applications, where precision and evidence-based information are critical \cite{RAGHealthcare}.
+
+Zakka et al. \cite{RAGHealthcare} conducted a comprehensive survey of RAG applications in healthcare, highlighting the importance of domain-specific retrieval systems for improving response quality in medical contexts. Our RAG implementation for tobacco cessation incorporates several key components identified in the literature:
+
+\begin{itemize}[label=$\bullet$, leftmargin=1cm, itemsep=0.2cm]
+\item \textbf{Vector Databases}: We utilized Chroma \cite{Chroma} for efficient storage and retrieval of tobacco cessation literature embeddings, enabling rapid access to relevant information during user interactions.
+
+\item \textbf{Optimal Chunking Strategies}: Following research by Gao et al. \cite{RAGChunking}, we implemented semantic chunking techniques that preserve the coherence of medical concepts while optimizing retrieval performance.
+
+\item \textbf{Context Integration Methods}: Building on work by Liu et al. \cite{RAGPrompting}, we developed approaches for seamlessly incorporating retrieved information into model prompts to improve response coherence and accuracy.
+\end{itemize}
+
+Recent evaluations by Asai et al. \cite{RAGEvaluation} have demonstrated that advanced RAG architectures can significantly improve response quality for domain-specific applications, particularly in cases where factual accuracy is paramount. Our implementation leverages these insights to ensure that responses to tobacco cessation queries are grounded in authoritative medical information.
+
+\section{Mobile and Backend Development Technologies}
+\begin{center}
+\begin{tabular}{|>{}p{0.45\textwidth}|>{}p{0.45\textwidth}|}
+\hline
+\rowcolor{gray!15} \textbf{Frontend Technologies} & \textbf{Backend Technologies} \\
+\hline
+Flutter: Cross-platform UI toolkit & Spring Boot: Java-based framework \\
+\hline
+Dart: Client-optimized language & RESTful APIs: Standardized interfaces \\
+\hline
+Material Design: UI component library & JWT Authentication: Secure identity management \\
+\hline
+Provider: State management & Hibernate: Object-relational mapping \\
+\hline
+Dio: HTTP client for API integration & PostgreSQL: Relational database system \\
+\hline
+\end{tabular}
+\end{center}
+
+Our completed work on the frontend and backend components of the tobacco cessation application builds upon established research in mobile and server-side development technologies. For the frontend implementation, we selected Flutter \cite{Flutter} based on its demonstrated advantages in cross-platform development. As documented by Google's development team, Flutter offers significant benefits for healthcare applications, including consistent rendering across platforms, high performance through direct compilation to native code, and extensive widget libraries that facilitate the creation of intuitive user interfaces.
+
+For backend development, we implemented a robust system using Spring Boot \cite{Spring}, which has been widely adopted in healthcare applications due to its security features, scalability, and comprehensive ecosystem. Johnson et al.'s foundational work on the Spring Framework established principles for dependency injection and aspect-oriented programming that continue to influence modern backend development. Our implementation leverages these principles to create a secure, maintainable system for managing user data, authentication, and API integration with language model services.
+
+\section{Evaluation Approaches for Healthcare AI Systems}
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!75!black,title=Multi-dimensional Evaluation Framework]
+Effective assessment of AI systems for healthcare applications requires consideration of both technical performance metrics and user-centered outcomes. Our evaluation approach integrates these dimensions to provide a comprehensive understanding of system effectiveness.
+\end{tcolorbox}
+
+The evaluation of AI systems for healthcare applications presents unique challenges that have been addressed in recent literature. Weitzman and Kaci \cite{HealthcareMetrics} proposed a comprehensive framework for evaluating machine learning in healthcare that encompasses technical performance, clinical validity, and user experience. This multi-dimensional approach has informed our evaluation methodology for the tobacco cessation system.
+
+For technical assessment of our fine-tuned models, we have applied standard metrics including precision, recall, and F1 scores, while also incorporating domain-specific measures of clinical accuracy and appropriateness of recommendations. The user engagement dimension of evaluation builds on research by Marcolino et al. \cite{mHealthEngagement}, who identified key factors influencing retention in mHealth applications, including personalization, interaction quality, and perceived value.
+
+\section{Agentic Systems for Synthetic Data Generation}
+
+\begin{figure}[h]
+\centering
+\fbox{\parbox{0.9\textwidth}{\centering
+\textbf{The Data Scarcity Challenge in Healthcare AI}\\[0.2cm]
+Limited availability of authentic patient-provider conversations\\[0.1cm]
+Privacy concerns restricting access to real clinical dialogues\\[0.1cm]
+Need for diverse scenarios beyond available training examples}}
+\caption{Motivating factors for synthetic data generation in healthcare AI}
+\label{fig:data-scarcity-challenge}
+\end{figure}
+
+Our transition from hand-written conversations to agentic data generation is informed by emerging research on multi-agent systems for synthetic data creation. Park et al. \cite{MultiAgentSystems} demonstrated that interactive simulacra of human behavior can generate realistic social interactions, while Xi et al. \cite{AgentRoles} explored the importance of well-defined roles in multi-agent systems. These findings provide the theoretical foundation for our agentic approach to generating tobacco cessation conversations.
+
+Thirunavukarasu et al. \cite{HealthcareDataChallenges} highlighted the critical challenge of data scarcity in healthcare AI, noting that privacy concerns and regulatory requirements significantly limit the availability of authentic clinical conversations for model training. This challenge is particularly acute in specialized domains like tobacco cessation, where conversations must reflect both clinical accuracy and the nuanced psychological aspects of addiction recovery.
+
+\begin{itemize}[label=$\bullet$, leftmargin=1cm, itemsep=0.2cm]
+\item Chen et al. \cite{DomainExpertAgents} demonstrated that specialized agents can effectively encode domain expertise, providing a model for our implementation of healthcare provider agents in the tobacco cessation context.
+
+\item Kim et al. \cite{PatientSimulation} established frameworks for synthetic patient generation that maintain clinical realism while enabling controlled variation of patient characteristics—principles we have applied in our patient simulator agents.
+
+\item Wei et al. \cite{ChainOfThought} showed that chain-of-thought reasoning significantly improves the transparency and quality of AI-generated content, a finding we have leveraged to enhance the educational value of our synthetic conversations.
+\end{itemize}
+
+The integration of these research directions has informed our development of an agentic system that addresses the limitations of our initial hand-written conversation approach. By implementing specialized agents with distinct roles and incorporating chain-of-thought reasoning, we aim to generate diverse, clinically accurate conversations that capture the complexity of tobacco cessation counseling while respecting patient privacy.
+
+\section{Applications in Behavioral Health and Future Directions}
+The application of AI to behavioral health challenges, particularly addiction management, represents a rapidly evolving field with significant potential for public health impact. Rinaldi et al. \cite{BehavioralHealthAI} surveyed the landscape of AI applications in behavioral health, identifying key opportunities and challenges in areas including mental health support, addiction management, and behavior change facilitation. Their analysis highlighted the potential for AI systems to provide accessible, scalable interventions that complement traditional healthcare approaches.
+
+In the specific context of tobacco cessation, Prochaska et al. \cite{ProchaskaTobacco} conducted a comprehensive review of AI and mobile technology applications, finding that personalized, just-in-time interventions can significantly increase quit rates compared to traditional approaches. Their work emphasized the importance of combining evidence-based cessation strategies with technological innovations to maximize effectiveness.
+
+\begin{center}
+\rule{0.7\textwidth}{0.5pt}
+\end{center}
+
+This literature review has examined the research foundations underlying our completed work in Flutter frontend development, Spring Boot backend implementation, RAG systems, and model fine-tuning using hand-written conversations. The transition to an agentic approach for generating synthetic training data represents a natural evolution of this work, addressing the limitations of manual data creation while leveraging advances in multi-agent systems and chain-of-thought reasoning. The following chapters will detail the methodology and implementation of this agentic system, building upon the theoretical and technical foundations established in the literature.
